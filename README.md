@@ -11,6 +11,7 @@
 
 ## Setting up
 Add Authentication Middleware
+
     MIDDLEWARE_CLASSES = (
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.middleware.common.CommonMiddleware',
@@ -21,7 +22,9 @@ Add Authentication Middleware
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
         'django.middleware.security.SecurityMiddleware',
     )
+    
 Include url
+
     urlpatterns = patterns('',
         # .......
         url(r'api/',include('moe_auth.api.urls')),
