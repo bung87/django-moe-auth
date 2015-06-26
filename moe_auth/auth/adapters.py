@@ -1,7 +1,7 @@
 from mongoengine.django.mongo_auth.models import get_user_document
 from allauth.account.adapter import DefaultAccountAdapter as BaseAccountAdapter
 from allauth.account import app_settings
-from moe.auth.documents import Site
+from moe_auth.auth.documents import Site
 try:
     from django.utils.encoding import force_text
 except ImportError:

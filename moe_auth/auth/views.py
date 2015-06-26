@@ -48,7 +48,7 @@ def _get_user_session_key(request):
     if SESSION_KEY in request.session:
         return ObjectId(request.session[SESSION_KEY])
 
-from moe.auth.serializers import ( UserDetailsSerializer,
+from moe_auth.auth.serializers import ( UserDetailsSerializer,
     LoginSerializer, PasswordResetSerializer, PasswordResetConfirmSerializer,
     PasswordChangeSerializer)
 

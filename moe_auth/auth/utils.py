@@ -1,5 +1,5 @@
 from allauth.account import app_settings
-from moe.auth.documents import EmailAddress, EmailConfirmation
+from moe_auth.auth.documents import EmailAddress, EmailConfirmation
 from mongoengine.django.mongo_auth.models import get_user_document
 from allauth.account.adapter import get_adapter
 from django.utils.datastructures import SortedDict

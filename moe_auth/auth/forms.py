@@ -2,7 +2,7 @@ import warnings
 from allauth.account.forms import _base_signup_form_class
 from django import forms
 from allauth.account import app_settings
-from moe.auth.utils import setup_user_email
+from moe_auth.auth.utils import setup_user_email
 from allauth.utils import (
                      set_form_field_order
                      )
@@ -10,7 +10,7 @@ from allauth.utils import (
 from allauth.account.adapter import get_adapter
 from django.utils.translation import pgettext, ugettext_lazy as _, ugettext
 from allauth.account.forms import SetPasswordField,PasswordField
-from moe.auth.utils import email_address_exists
+from moe_auth.auth.utils import email_address_exists
 
 class BaseSignupForm(_base_signup_form_class()):
     username = forms.CharField(label=_("Username"),

@@ -1,6 +1,6 @@
 from django.conf.urls import url,patterns,include
 
-from moe.auth.views import (Login, Logout, UserDetails, PasswordChange,
+from moe_auth.auth.views import (Login, Logout, UserDetails, PasswordChange,
   PasswordReset, PasswordResetConfirm)
 
 urlpatterns = patterns('',

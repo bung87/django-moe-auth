@@ -1,6 +1,6 @@
 from django.utils.functional import SimpleLazyObject
 from mongoengine.django.auth import get_user
-from moe.auth.views import _get_user_session_key
+from moe_auth.auth.views import _get_user_session_key
 
 class AuthenticationMiddleware(object):
     def process_request(self, request):

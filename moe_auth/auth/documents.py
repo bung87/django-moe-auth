@@ -5,7 +5,7 @@ from mongoengine.django.utils import datetime_now
 from django.utils.translation import ugettext_lazy as _
 USER_DOCUMENT = get_user_document()
 from django.utils import timezone
-from moe.auth import managers
+from moe_auth.auth import managers
 from django.utils.crypto import get_random_string
 from allauth.account import signals
 from allauth.utils import build_absolute_uri
