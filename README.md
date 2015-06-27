@@ -10,6 +10,14 @@
 * django-allauth>=0.19.1
 
 ## Setting up
+Add setttings for allauth
+
+    ACCOUNT_ADAPTER = 'moe_auth.auth.adapters.DefaultAccountAdapter'
+
+    ACCOUNT_FORMS = {
+        'signup':'moe_auth.auth.forms.SignupForm'
+    }
+
 Add Authentication Middleware
 
     MIDDLEWARE_CLASSES = (
@@ -22,7 +30,7 @@ Add Authentication Middleware
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
         'django.middleware.security.SecurityMiddleware',
     )
-    
+
 Include url
 
     urlpatterns = patterns('',
